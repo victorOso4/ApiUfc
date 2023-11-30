@@ -18,7 +18,7 @@ const loggerMiddleware = (req, res, next) => {
   const { method, url } = req;
   const timestamp = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
 
-  const logMessage = `${timestamp} [${method}] [${url}]`;
+  const logMessage = `${timestamp} [${method}] [${url}]`; 
 
   // Aquí puedes guardar el log en un archivo, base de datos, o enviarlo a la consola.
   console.log(logMessage);
